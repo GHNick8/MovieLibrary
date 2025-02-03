@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Rawap\\Desktop\\C#\\MovieLibrary.cs\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B18CD760-BB49-4D99-9233-81253A2DFD57}|MovieLibrary.cs\\MovieLibrary.cs.csproj|c:\\users\\rawap\\desktop\\c#\\movielibrary.cs\\movielibrary.cs\\frmmovielibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B18CD760-BB49-4D99-9233-81253A2DFD57}|MovieLibrary.cs\\MovieLibrary.cs.csproj|solutionrelative:movielibrary.cs\\frmmovielibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B18CD760-BB49-4D99-9233-81253A2DFD57}|MovieLibrary.cs\\MovieLibrary.cs.csproj|c:\\users\\rawap\\desktop\\c#\\movielibrary.cs\\movielibrary.cs\\frmmovielibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B18CD760-BB49-4D99-9233-81253A2DFD57}|MovieLibrary.cs\\MovieLibrary.cs.csproj|solutionrelative:movielibrary.cs\\frmmovielibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmMovieLibrary.cs",
+              "DocumentMoniker": "C:\\Users\\Rawap\\Desktop\\C#\\MovieLibrary.cs\\MovieLibrary.cs\\frmMovieLibrary.cs",
+              "RelativeDocumentMoniker": "MovieLibrary.cs\\frmMovieLibrary.cs",
+              "ToolTip": "C:\\Users\\Rawap\\Desktop\\C#\\MovieLibrary.cs\\MovieLibrary.cs\\frmMovieLibrary.cs",
+              "RelativeToolTip": "MovieLibrary.cs\\frmMovieLibrary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T15:26:28.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmMovieLibrary.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Rawap\\Desktop\\C#\\MovieLibrary.cs\\MovieLibrary.cs\\frmMovieLibrary.cs",
+              "RelativeDocumentMoniker": "MovieLibrary.cs\\frmMovieLibrary.cs",
+              "ToolTip": "C:\\Users\\Rawap\\Desktop\\C#\\MovieLibrary.cs\\MovieLibrary.cs\\frmMovieLibrary.cs [Design]",
+              "RelativeToolTip": "MovieLibrary.cs\\frmMovieLibrary.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T15:12:35.194Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
