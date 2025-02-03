@@ -311,6 +311,21 @@ namespace MovieLibrary.cs
             }
         }
 
+        // Method to search for a specific movie
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dgvMovies.DataSource = MovieService.SearchMovies(txtSearch.Text);
+            }
+            catch (Exception ex)
+            {
+                LogError(ex);
+                MessageBox.Show("Failed to search movies.", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         // Methods to export to csv, excel, pdf files 
         private void ExportToCsv(DataGridView dataGridView, string filePath)
         {

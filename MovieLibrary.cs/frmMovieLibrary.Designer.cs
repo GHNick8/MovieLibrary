@@ -60,8 +60,8 @@
             this.txtRelease = new System.Windows.Forms.TextBox();
             this.txtGenre = new System.Windows.Forms.TextBox();
             this.txtRating = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numAddRating)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMovies)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -201,7 +201,7 @@
             // closeMenuItem
             // 
             this.closeMenuItem.Name = "closeMenuItem";
-            this.closeMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.closeMenuItem.Size = new System.Drawing.Size(128, 26);
             this.closeMenuItem.Text = "Close";
             this.closeMenuItem.Click += new System.EventHandler(this.closeMenuItem_Click);
             // 
@@ -218,21 +218,21 @@
             // addMenuItem
             // 
             this.addMenuItem.Name = "addMenuItem";
-            this.addMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addMenuItem.Size = new System.Drawing.Size(141, 26);
             this.addMenuItem.Text = "Add";
             this.addMenuItem.Click += new System.EventHandler(this.addMenuItem_Click);
             // 
             // updateMenuItem
             // 
             this.updateMenuItem.Name = "updateMenuItem";
-            this.updateMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.updateMenuItem.Size = new System.Drawing.Size(141, 26);
             this.updateMenuItem.Text = "Update";
             this.updateMenuItem.Click += new System.EventHandler(this.updateMenuItem_Click);
             // 
             // deleteMenuItem
             // 
             this.deleteMenuItem.Name = "deleteMenuItem";
-            this.deleteMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.deleteMenuItem.Size = new System.Drawing.Size(141, 26);
             this.deleteMenuItem.Text = "Delete";
             this.deleteMenuItem.Click += new System.EventHandler(this.deleteMenuItem_Click);
             // 
@@ -249,21 +249,21 @@
             // exportToCsvMenuItem
             // 
             this.exportToCsvMenuItem.Name = "exportToCsvMenuItem";
-            this.exportToCsvMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exportToCsvMenuItem.Size = new System.Drawing.Size(191, 26);
             this.exportToCsvMenuItem.Text = "Export to csv";
             this.exportToCsvMenuItem.Click += new System.EventHandler(this.exportToCsvMenuItem_Click);
             // 
             // exportToExcelMenuItem
             // 
             this.exportToExcelMenuItem.Name = "exportToExcelMenuItem";
-            this.exportToExcelMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exportToExcelMenuItem.Size = new System.Drawing.Size(191, 26);
             this.exportToExcelMenuItem.Text = "Export to excel";
             this.exportToExcelMenuItem.Click += new System.EventHandler(this.exportToExcelMenuItem_Click);
             // 
             // exportToPdfMenuItem
             // 
             this.exportToPdfMenuItem.Name = "exportToPdfMenuItem";
-            this.exportToPdfMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exportToPdfMenuItem.Size = new System.Drawing.Size(191, 26);
             this.exportToPdfMenuItem.Text = "Export to pdf";
             this.exportToPdfMenuItem.Click += new System.EventHandler(this.exportToPdfMenuItem_Click);
             // 
@@ -278,7 +278,7 @@
             // testConnectionMenuItem
             // 
             this.testConnectionMenuItem.Name = "testConnectionMenuItem";
-            this.testConnectionMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.testConnectionMenuItem.Size = new System.Drawing.Size(197, 26);
             this.testConnectionMenuItem.Text = "Test Connection";
             this.testConnectionMenuItem.Click += new System.EventHandler(this.testConnectionMenuItem_Click);
             // 
@@ -366,24 +366,25 @@
             this.txtRating.TabStop = false;
             this.txtRating.Text = "Rating";
             // 
-            // button4
+            // btnSearch
             // 
-            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(793, 508);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(87, 34);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Search";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(793, 508);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(87, 34);
+            this.btnSearch.TabIndex = 11;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(687, 508);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 30);
-            this.textBox1.TabIndex = 10;
+            this.txtSearch.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(687, 508);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(100, 30);
+            this.txtSearch.TabIndex = 10;
             // 
             // frmMovieLibrary
             // 
@@ -391,8 +392,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(998, 632);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtRating);
             this.Controls.Add(this.txtGenre);
             this.Controls.Add(this.txtRelease);
@@ -416,6 +417,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMovieLibrary";
             this.Text = "Movie Library";
+            this.Load += new System.EventHandler(this.frmMovieLibrary_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numAddRating)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMovies)).EndInit();
             this.menuStrip1.ResumeLayout(false);
@@ -458,8 +460,8 @@
         private System.Windows.Forms.TextBox txtRelease;
         private System.Windows.Forms.TextBox txtGenre;
         private System.Windows.Forms.TextBox txtRating;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox txtSearch;
     }
 }
 

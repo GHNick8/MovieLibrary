@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="MovieLibrary.cs.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="MovieLibrary.cs.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="MovieLibrary.cs" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -342,14 +342,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MovieLibrary.cs.exe" size="137632">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MovieLibrary.cs.exe" size="138144">
       <assemblyIdentity name="MovieLibrary.cs" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gyzLtUtTRnPyeNax/Nl+GsfFkX5G1YuscRJ7BTl5Kco=</dsig:DigestValue>
+        <dsig:DigestValue>bsmGvqvANeD/bk3s6r2OA9PY4WXDatmlKWPq3sDzeZM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -488,7 +488,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>4VlOwEyIouL6VUWNSdUvywdlvTOeSKES0kdSyKZN0HM=</dsig:DigestValue>
+      <dsig:DigestValue>CBNv1saPVvRT7qNBnrDlcNiWNNaBi28IEnXGBSx0ghE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="MovieLibraryDB_log.ldf" size="8388608" writeableType="applicationData">
@@ -497,7 +497,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>0gUO+lBSTcSWYn8c74kgGzSSmW/0ga/JVUbhS6B2TRY=</dsig:DigestValue>
+      <dsig:DigestValue>+44XTedDOHfzKwnObqhsBhdwILt+PylglBc1XlXaDyo=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
