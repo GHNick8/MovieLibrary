@@ -1,18 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
 
 using OfficeOpenXml;
-
-using iText.Kernel.Pdf;
-using iText.Layout;
-using iText.Layout.Element;
-using iText.Layout.Properties;
-using iText.IO.Font.Constants; 
-using iText.Kernel.Font;
-using System.Drawing;
 
 namespace MovieLibrary.cs
 {
