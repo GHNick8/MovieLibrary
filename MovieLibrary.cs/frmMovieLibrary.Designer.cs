@@ -50,7 +50,6 @@
             this.exportMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportToCsvMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportToExcelMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportToPdfMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testConnectionMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtTitle = new System.Windows.Forms.TextBox();
@@ -240,8 +239,7 @@
             // 
             this.exportMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exportToCsvMenuItem,
-            this.exportToExcelMenuItem,
-            this.exportToPdfMenuItem});
+            this.exportToExcelMenuItem});
             this.exportMenuItem.Name = "exportMenuItem";
             this.exportMenuItem.Size = new System.Drawing.Size(66, 24);
             this.exportMenuItem.Text = "Export";
@@ -249,23 +247,16 @@
             // exportToCsvMenuItem
             // 
             this.exportToCsvMenuItem.Name = "exportToCsvMenuItem";
-            this.exportToCsvMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.exportToCsvMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exportToCsvMenuItem.Text = "Export to csv";
             this.exportToCsvMenuItem.Click += new System.EventHandler(this.exportToCsvMenuItem_Click);
             // 
             // exportToExcelMenuItem
             // 
             this.exportToExcelMenuItem.Name = "exportToExcelMenuItem";
-            this.exportToExcelMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.exportToExcelMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exportToExcelMenuItem.Text = "Export to excel";
             this.exportToExcelMenuItem.Click += new System.EventHandler(this.exportToExcelMenuItem_Click);
-            // 
-            // exportToPdfMenuItem
-            // 
-            this.exportToPdfMenuItem.Name = "exportToPdfMenuItem";
-            this.exportToPdfMenuItem.Size = new System.Drawing.Size(191, 26);
-            this.exportToPdfMenuItem.Text = "Export to pdf";
-            this.exportToPdfMenuItem.Click += new System.EventHandler(this.exportToPdfMenuItem_Click);
             // 
             // settingsMenuItem
             // 
@@ -452,7 +443,6 @@
         private System.Windows.Forms.ToolStripMenuItem testConnectionMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportToCsvMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportToExcelMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exportToPdfMenuItem;
         private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.TextBox txtDirectors;
         private System.Windows.Forms.TextBox txtWriters;

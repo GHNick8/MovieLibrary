@@ -18,25 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmMovieLibrary.cs",
-              "DocumentMoniker": "C:\\Users\\Rawap\\Desktop\\C#\\MovieLibrary.cs\\MovieLibrary.cs\\frmMovieLibrary.cs",
-              "RelativeDocumentMoniker": "MovieLibrary.cs\\frmMovieLibrary.cs",
-              "ToolTip": "C:\\Users\\Rawap\\Desktop\\C#\\MovieLibrary.cs\\MovieLibrary.cs\\frmMovieLibrary.cs",
-              "RelativeToolTip": "MovieLibrary.cs\\frmMovieLibrary.cs",
-              "ViewState": "AgIAABMCAAAAAAAAAAAAACMCAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T15:26:28.594Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -48,6 +31,19 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-03T15:12:35.194Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmMovieLibrary.cs",
+              "DocumentMoniker": "C:\\Users\\Rawap\\Desktop\\C#\\MovieLibrary.cs\\MovieLibrary.cs\\frmMovieLibrary.cs",
+              "RelativeDocumentMoniker": "MovieLibrary.cs\\frmMovieLibrary.cs",
+              "ToolTip": "C:\\Users\\Rawap\\Desktop\\C#\\MovieLibrary.cs\\MovieLibrary.cs\\frmMovieLibrary.cs",
+              "RelativeToolTip": "MovieLibrary.cs\\frmMovieLibrary.cs",
+              "ViewState": "AgIAAMEBAAAAAAAAAAAAAOEBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T15:26:28.594Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -428,72 +428,6 @@ namespace MovieLibrary.cs
             }
         }
 
-        private void ExportToPdf(DataGridView dataGridView, string filePath)
-        {
-            try
-            {
-                using (var pdfWriter = new PdfWriter(filePath))
-                using (var pdfDocument = new PdfDocument(pdfWriter))
-                {
-                    var document = new Document(pdfDocument);
-
-                    // Add a title to the PDF
-                    var boldFont = PdfFontFactory.CreateFont(StandardFonts.HELVETICA_BOLD);
-                    document.Add(new Paragraph("Exported Data")
-                        .SetTextAlignment(TextAlignment.CENTER)
-                        .SetFont(boldFont)
-                        .SetFontSize(14));
-
-                    // Create a table with the same number of columns as the DataGridView
-                    var table = new Table(dataGridView.Columns.Count);
-                    table.SetWidth(UnitValue.CreatePercentValue(100)); // Make table span the full width
-
-                    // Add column headers
-                    foreach (DataGridViewColumn column in dataGridView.Columns)
-                    {
-                        table.AddHeaderCell(new Cell().Add(new Paragraph(column.HeaderText).SetFont(boldFont)));
-                    }
-
-                    // Add rows from DataGridView
-                    foreach (DataGridViewRow row in dataGridView.Rows)
-                    {
-                        if (!row.IsNewRow)
-                        {
-                            foreach (DataGridViewCell cell in row.Cells)
-                            {
-                                table.AddCell(new Cell().Add(new Paragraph(cell.Value?.ToString() ?? "")));
-                            }
-                        }
-                    }
-
-                    // Add table to the document
-                    document.Add(table);
-
-                    document.Close();
-                    MessageBox.Show("PDF file saved successfully!", "Success",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message, "Error",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-        private void exportToPdfMenuItem_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog saveFileDialog = new SaveFileDialog
-            {
-                Filter = "PDF files (*.pdf)|*.pdf",
-                Title = "Save as PDF"
-            };
-
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                ExportToPdf(dgvMovies, saveFileDialog.FileName);
-            }
-        }
-
         // Method to test database connection
         private void testConnectionMenuItem_Click(object sender, EventArgs e)
         {
@@ -520,7 +454,7 @@ namespace MovieLibrary.cs
         private void StyleDataGridView(DataGridView dgv)
         {
             dgv.BackgroundColor = Color.White;
-            dgv.GridColor = Color.LightGray;
+            dgv.GridColor = Color.FromArgb(240, 240, 240);
 
             dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(240, 240, 240);
             dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
@@ -533,7 +467,7 @@ namespace MovieLibrary.cs
             dgv.DefaultCellStyle.SelectionBackColor = Color.LightBlue;
             dgv.DefaultCellStyle.SelectionForeColor = Color.Black;
          
-            dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray;
+            dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(240, 240, 240);
 
             dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgv.RowHeadersVisible = false; 
